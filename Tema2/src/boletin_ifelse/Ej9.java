@@ -7,6 +7,7 @@ public class Ej9 {
 
 		
 		//Crear constante para las opciones de piedra papel y tijeras con palabras o numeros
+		//.equalsIgnoreCase es para ignorar mayuscuclas y minusculas
 	}
 
 }
