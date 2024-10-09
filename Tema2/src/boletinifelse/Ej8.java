@@ -1,4 +1,4 @@
-package boletin_ifelse;
+package boletinifelse;
 
 import java.util.Scanner;
 
@@ -22,6 +22,8 @@ public class Ej8 {
 		
 		//Creamos el escaner
 		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Introduzca su nota:");
 		nota = sc.nextDouble();
 		
 		if (nota >= 0 && nota < 5 ) {
@@ -38,6 +40,8 @@ public class Ej8 {
 			System.out.println("Su nota no es correcta");
 		}
 		
+		//Cerramos el escaner
+		sc.close();
 	}
 
 }
