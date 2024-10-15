@@ -46,7 +46,7 @@ public class Ej1 {
 				if (unidadesDosDigitos == decenas) {
 					System.out.println("Su numero es capicua");
 				} else {
-					System.err.println("Su numero no es capicua");
+					System.out.println("Su numero no es capicua");
 				}
 				
 			} else if (numero >= 100 && numero < 1000) {
@@ -56,7 +56,7 @@ public class Ej1 {
 				if (unidadesTresDigitos == centenas) {
 					System.out.println("Su numero es capicua");
 				} else {
-					System.err.println("Su numero no es capicua");
+					System.out.println("Su numero no es capicua");
 				}
 				
 			}else if (numero >= 1000 && numero < 10000) {
