@@ -1,4 +1,4 @@
-package switch_;
+package boletinswitch;
 
 import java.util.Scanner;
 

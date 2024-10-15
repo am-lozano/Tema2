@@ -1,4 +1,4 @@
-package switch_;
+package boletinswitch;
 
 public class Ej4 {
 
