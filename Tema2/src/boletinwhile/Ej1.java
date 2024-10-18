@@ -31,15 +31,14 @@ public class Ej1 {
 		while (num >0) {
 			
 			//Sumamos el valor anterior a la variable suma, cuyo valor inicial es 0
-			suma = suma + num;
-			
-			System.out.println("La suma de sus numeros es de:" + suma);
+			suma += num;
 			
 			System.out.println("Introduzca un numero:");
 			num = sc.nextInt();
 		}
 		
-		System.out.println("Como se ha introducido un numero negativo el programa finaliza");
+		//Mostramos la suma
+		System.out.println("La suma de sus numeros es de: " + suma);
 		
 		//Cerramos el escaner
 		sc.close();
