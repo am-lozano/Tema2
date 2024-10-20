@@ -33,6 +33,13 @@ public class Ej5 {
 			
 			random = rand.nextInt(1, 101);
 			System.out.println(random);
+			
+			if (random > numero) {
+				System.out.println("El numero pensado es menor");
+			}
+			if (random < numero) {
+				System.out.println("El numero pensado es mayor");
+			}
 
 		} while (random != numero);
 
