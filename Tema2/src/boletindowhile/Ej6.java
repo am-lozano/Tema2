@@ -31,22 +31,27 @@ public class Ej6 {
 
 		// Creamos el Scanner
 		Scanner sc = new Scanner(System.in);
-
-		// Turno del jugador 1
-		System.out.println("Jugador 1: Eliga piedra, papel o tijeras");
-		jugador1 = sc.next();
-
-		// Turno del jugador 2
-		System.out.println("Jugador 2: Eliga piedra, papel o tijeras");
-		jugador2 = sc.next();
-
-		// Comprobamos que ambos jugadores introduzcan una opcion valida
-		if (!jugador1.equalsIgnoreCase(PIEDRA) && !jugador1.equalsIgnoreCase(PAPEL)
-				&& !jugador1.equalsIgnoreCase(TIJERAS)
-				|| !jugador2.equalsIgnoreCase(PIEDRA) && !jugador2.equalsIgnoreCase(PAPEL)
-						&& !jugador2.equalsIgnoreCase(TIJERAS)) {
-			System.out.println("ERROR\nAmbos jugadores deben elegir entre PIEDRA, PAPEL o TIJERAS.");
-		} else {
+		
+		do {
+			// pedimos la jugada al jugador 1
+			System.out.println("Jugador 1: Eliga piedra, papel o tijeras");
+			jugador1 = sc.next();
+		} while (!jugador1.equalsIgnoreCase(PIEDRA) && !jugador1.equalsIgnoreCase(PAPEL)
+				&& !jugador1.equalsIgnoreCase(TIJERAS));
+		
+		System.out.println("Jugada del jugador 1: " + jugador1);
+		System.out.println();
+		
+		do {
+			// pedimos la jugada al jugador 2
+			System.out.println("Jugador 2: Eliga piedra, papel o tijeras");
+			jugador2 = sc.next();
+		} while (!jugador2.equalsIgnoreCase(PIEDRA) && !jugador2.equalsIgnoreCase(PAPEL)
+				&& !jugador2.equalsIgnoreCase(TIJERAS));
+		
+		System.out.println("Jugada del jugador 2: " + jugador2);
+		System.out.println();
+		
 			if (jugador1.equalsIgnoreCase(jugador2)) {
 				System.out.println("Empate");
 			} else if (jugador1.equalsIgnoreCase(PIEDRA) && jugador2.equalsIgnoreCase(TIJERAS)
@@ -56,7 +61,6 @@ public class Ej6 {
 			} else {
 				System.out.println("¡Player 2 win!");
 			}
-		}
 
 		// Cerramos el Scanner
 		sc.close();

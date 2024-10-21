@@ -17,27 +17,32 @@ public class Ej5 {
 
 		// variable para el numero "pensado" por el usuario
 		int numero;
+		
+		// variable para los valores maximos y minimos del rango del numero random generado
+		int minimo = 1;
+		int maximo = 101;
 
 		// creamos el escaner
 		Scanner sc = new Scanner(System.in);
 
 		// generamos un numero random entre 1 y 100
 		Random rand = new Random();
-		int random = rand.nextInt(1, 101);
-
+		int random = rand.nextInt(minimo, maximo);
+		
 		// pedimos el numero
 		System.out.println("Introduzca un numero:");
 		numero = sc.nextInt();
 		
 		do {
-			
-			random = rand.nextInt(1, 101);
+			random = rand.nextInt(minimo, maximo);
 			System.out.println(random);
 			
 			if (random > numero) {
+				maximo = random;
 				System.out.println("El numero pensado es menor");
 			}
 			if (random < numero) {
+				minimo = numero;
 				System.out.println("El numero pensado es mayor");
 			}
 
