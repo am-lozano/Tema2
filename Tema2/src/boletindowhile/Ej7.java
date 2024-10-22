@@ -75,13 +75,17 @@ public class Ej7 {
 			}
 			case "e", "E" -> {
 				
-				System.out.println("¿Estas seguro? \n 1 = salir");
+				System.out.println("¿Estas seguro? \n 1 = salir \n 0 = cancelar");
 				salir = sc.nextInt();
 				
 				if (salir == 1) {
+					System.out.println();
 					System.out.println("Calculadora finalizada");
 				} 
 				
+			}
+			default ->{
+				System.out.println("Opcion incorrecta");
 			}
 			};
 
