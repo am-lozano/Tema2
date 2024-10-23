@@ -13,8 +13,12 @@ public class Ej2 {
 
 		// variable para almacenar el numero pedido
 		int numero;
-		
-		int contador = 1;
+
+		// variable para contar los multiplos de 3 desde 1 hasta n
+		int multiplo = 0;
+
+		// variable para mostrar el numero de multiplos de 3
+		int contador = 0;
 
 		// creamos el escaner
 		Scanner sc = new Scanner(System.in);
@@ -24,15 +28,16 @@ public class Ej2 {
 		numero = sc.nextInt();
 
 		for (int i = 1; i <= numero; i++) {
-			
-			contador++;
-			
-			if (contador % 3 == 0) {
-				System.out.println("Su numero es multiplo de 3");
-			} else {
-				System.out.println("Su numero no es multiplo de 3");
+
+			multiplo++;
+
+			if (multiplo % 3 == 0) {
+				contador++;
 			}
 		}
+
+		// mostramos el resultado
+		System.out.println("Hay " + contador + " multiplos de 3 desde 1 hasta " + numero);
 
 		// cerramos el escaner
 		sc.close();
