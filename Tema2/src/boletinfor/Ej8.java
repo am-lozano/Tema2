@@ -34,8 +34,8 @@ public class Ej8 {
 				System.out.println(i);
 			}
 		} else {
-			for (int j = numeroA, contador = numeroB; j >= numeroB; j--, numeroB++) {
-				System.out.println(numeroB);
+			for (int j = numeroA, contador = numeroB; j >= numeroB; j--, contador++) {
+				System.out.println(contador);
 			}
 		}
 
