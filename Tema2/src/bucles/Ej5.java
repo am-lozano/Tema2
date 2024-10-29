@@ -24,7 +24,7 @@ public class Ej5 {
 
 		for (int i = 1; i <= numero; i++) {
 
-			System.out.println();
+			
 			contador = 1;
 
 			for (int j = i; j >= contador; contador++) {
@@ -32,6 +32,9 @@ public class Ej5 {
 				System.out.print(j);
 
 			}
+			
+			// salto de linea
+			System.out.println();
 
 		}
 
