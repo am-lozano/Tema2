@@ -7,41 +7,38 @@ public class Ej7 {
 	public static void main(String[] args) {
 
 		/*
-		 * Solicita al usuario un número n y dibuja un triángulo de base y altura n.
+		 * Escribe un programa que lea un número n e imprima una pirámide de números con
+		 * n filas como en la siguiente figura:
+		 * 
+		 * 1 121 12321 1234321
 		 */
 
-		// variable para pedir la cantidad de filas del triangulo
-		int filas;
-
-		// variable para introducir la cantidad de espacios
-		int espacios;
+		// variable para el nuemro maximo
+		int numero;
 
 		// creamos el escaner
 		Scanner sc = new Scanner(System.in);
 
-		do { // comprobamos que la cantidad de filas es un numero positivo
+		// pedimos el numero
+		System.out.println("Introduzca un numero:");
+		numero = sc.nextInt();
 
-			// pedimos la cantidad de filas del triangulo
-			System.out.println("Introduzca la cantidad de filas:");
-			filas = sc.nextInt();
+		for (int i = 1; i <= numero; i++) {
 
-		} while (filas <= 0);
-
-		for (int i = 1; i <= filas; i++) {
-
-			for (int j = filas - 1; j >= i; j--) {
-
-				System.out.print(" ");
+			for (int j = 1; j < i; j++) { // bucle para los numeros desde 1 hasta numero
+				System.out.print(j);
 			}
-			
-			for (int k = 1; k <= i; k++) {
 
-				System.out.print("* ");
+			for (int k = i; k > 0; k--) { // bucle para los numeros desde numero hasta 1
+				System.out.print(k);
 			}
 
 			System.out.println();
 
 		}
+
+		// cerramos el escaner
+		sc.close();
 
 	}
 
