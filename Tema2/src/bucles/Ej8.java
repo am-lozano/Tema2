@@ -35,24 +35,24 @@ public class Ej8 {
 		numero = sc.nextInt();
 
 		ultimoNumero = numero;
-		
+
 		while (numero != 0) {
-			
+
 			contador++;
-			
+
 			if (numero < ultimoNumero) {
-				
+
 				System.err.println("Fallo es menor");
-				
+
 				fallos++;
-				
+
 			}
-			
+
 			System.out.println("Introduzca un numero:");
 			numero = sc.nextInt();
-			
+
 		}
-		
+
 		System.out.println();
 		System.out.println(contador);
 		System.out.println(fallos);

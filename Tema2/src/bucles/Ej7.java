@@ -10,7 +10,10 @@ public class Ej7 {
 		 * Escribe un programa que lea un número n e imprima una pirámide de números con
 		 * n filas como en la siguiente figura:
 		 * 
-		 * 1 121 12321 1234321
+		 * 1 
+		 * 121 
+		 * 12321 
+		 * 1234321
 		 */
 
 		// variable para el nuemro maximo
@@ -23,7 +26,7 @@ public class Ej7 {
 		System.out.println("Introduzca un numero:");
 		numero = sc.nextInt();
 
-		for (int i = 1; i <= numero; i++) {
+		for (int i = 1; i <= numero; i++) { // bucle para el numero de filas
 
 			for (int j = 1; j < i; j++) { // bucle para los numeros desde 1 hasta numero
 				System.out.print(j);
